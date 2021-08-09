@@ -42,6 +42,13 @@
   cursor: default;
 }
 
+@media  screen and (max-width: 900px) {
+  .navbar__button--spacer {
+    width: 0em;
+    cursor: default;
+  }
+}
+
 .navbar__button--spacer:hover {
   background-color: var(--navbar-background-color);
 }
