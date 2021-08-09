@@ -1,0 +1,12 @@
+img {
+  height: 300px;
+  width: auto;
+}
+
+.map__wrapper {
+  margin: 20px;
+}
+
+.map__description {
+  font-size: small;
+}

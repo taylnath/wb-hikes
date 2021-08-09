@@ -1,0 +1,61 @@
+{% extends "base.html.jinja" %}
+{% block title %}Contact{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="style/contact.css" type="text/css">
+{% endblock %}
+
+  {% block content %}
+  <form class="contact__form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+    <fieldset>
+      <legend>Send me a message via "post"!</legend>
+      <fieldset>
+        <label>Name:
+          <input type="text" name="text_input">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Email:
+          <input type="text" name="email">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+        Please rate this site on a scale of 1 to 10:
+        <input type="number" name="numerical_input">
+      </label></fieldset>
+      <fieldset>
+        <label>Your Message:
+          <input type="text" name="message">
+        </label>
+      </fieldset>
+      <input class="submit" type="submit" value="Submit your rating">
+    </fieldset>
+  </form>
+
+  <div class="review__container">
+  What others have to say about the site:
+  <p class="review__content">
+  Name: Shelby. Rating: 10. Message: This site is awesome! <br>
+  Name: Ben. Rating: 8. Message: Your contact form is sub-par.<br>
+  Name: Luis. Rating: 2. Message: Worst site ever! There is no way to share on FriendSite!<br>
+  Name: Grace. Rating: 9. Message: I wish there was a map of all the hikes, otherwise looks good!<br>
+  Name: John. Rating: -340. Message: What is this form supposed to do?<br>
+  Name: Art. Rating: 106. Message: Looks like your form doesn't enforce numeric limits!<br>
+  Name: Bart. Rating: 10. Message: Super cool site, man.<br>
+  Name: Bob. Rating: 10. Message: Nice. <br>
+  Name: Bob. Rating: 10. Message: &lt; empty &gt; <br>
+  Name: Lucy. Rating: 7. Message: Nice photo composition! <br>
+  <!-- repeats here -->
+  Name: Shelby. Rating: 10. Message: This site is awesome! <br>
+  Name: Ben. Rating: 8. Message: Your contact form is sub-par.<br>
+  Name: Luis. Rating: 2. Message: Worst site ever! There is no way to share on FriendSite!<br>
+  Name: Grace. Rating: 9. Message: I wish there was a map of all the hikes, otherwise looks good!<br>
+  Name: John. Rating: -340. Message: What is this form supposed to do?<br>
+  Name: Art. Rating: 106. Message: Looks like your form doesn't enforce numeric limits!<br>
+  Name: Bart. Rating: 10. Message: Super cool site, man.<br>
+  Name: Bob. Rating: 10. Message: Nice. <br>
+  Name: Bob. Rating: 10. Message: &lt; empty &gt; <br>
+  Name: Lucy. Rating: 7. Message: Nice photo composition! <br>
+  </p>
+  </div>
+  {% endblock %}

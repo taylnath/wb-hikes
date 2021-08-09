@@ -1,0 +1,25 @@
+.img__container {
+  float: right;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.img__container p {
+  margin-top: 5px;
+  font-size: x-small;
+}
+/* img {
+  float: right;
+  padding: 20px;
+  padding-bottom: 30px;
+} */
+
+.hike__container {
+  margin: 20px;
+  margin-left: 0px;
+  clear: both;
+}
+
+.hike__description {
+  padding-right: 10px;
+}

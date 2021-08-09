@@ -1,0 +1,95 @@
+:root {
+  --navbar-color: #eeeeee;
+  --navbar-background-color: #333333;
+  --navbar-height: 60px;
+}
+.navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--navbar-background-color);
+  display: flex;
+}
+
+.navbar__button {
+  height: 100%;
+  width: auto;
+  color: var(--navbar-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  /* background-color: blue; */
+  /* margin: 0px 10px; */
+  margin: 0px;
+  box-sizing: border-box;
+  padding-top: px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.navbar__button:hover{
+  background-color: black;
+}
+
+.navbar__button--spacer {
+  width: 2em;
+  cursor: default;
+}
+
+.navbar__button--spacer:hover {
+  background-color: var(--navbar-background-color);
+}
+
+.navbar__button--active, .navbar__button--active:hover{
+  background-color: teal;
+}
+
+.content {
+  --content-inner-margin: 10px;
+  margin-top: calc(var(--navbar-height) + var(--content-inner-margin));
+  margin-left: var(--content-inner-margin);
+  margin-bottom: 20px;
+  padding: 10px 30px 10px 20px;
+  width: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 90%;
+    padding: 10px 0px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* padding: 10px; */
+  width: 100%;
+  /* border-top: 2px dashed grey; */
+  background-color: var(--navbar-background-color);
+  /* color: var(--navbar-color); */
+  font-size: small;
+  margin-top: 20px;
+}
+
+h1 {
+  border-bottom: 2px solid gray;
+  margin: 40px 0px;
+}
+
+/* .img__container {
+  text-align: justify;
+}
+
+.img__container img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.1;
+} */

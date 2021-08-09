@@ -1,0 +1,41 @@
+
+.contact__form {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
+fieldset > fieldset {
+  margin: 10px 5px;
+  border: none;
+}
+
+fieldset > fieldset > legend {
+  border: 2px solid black;
+}
+
+label {
+  padding: 5px;
+}
+
+.submit {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: lightskyblue;
+}
+
+.review__container {
+  height: 100%;
+}
+
+.review__content {
+  height: 100px;
+  border: 2px solid black;
+  overflow-y: scroll;
+}

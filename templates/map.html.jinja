@@ -1,0 +1,28 @@
+{% extends "base.html.jinja" %}
+{% block title %}Map{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="style/map.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+  <h1> Proxy Falls Map </h1>
+
+  <div class="map__wrapper">
+    <img src="images/proxy_falls_map.gif">
+    <div class="map__description">
+      Map from <a href="https://www.fs.usda.gov/recarea/willamette/recreation/recarea/?recid=4458">USFS</a>
+    </div>
+  </div>
+
+  <form class="map__download" method="get" action="images/proxy_falls_map.gif">
+    {# <button type="submit">Download map</button> #}
+    <input type="submit" value="Download map">
+  </form>
+  {# <a href="images/proxy_falls_map.gif" target="_blank" download="proxy_falls_map.gif">
+    <input type="button" value="Download map">
+  </a> #}
+{% endblock %}
+
+{% block footer %}
+This is the footer.
+{% endblock %}

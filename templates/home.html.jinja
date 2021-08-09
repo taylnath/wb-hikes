@@ -1,0 +1,35 @@
+{% extends "base.html.jinja" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="style/carousel.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+  <div class="slideshow__container--caption">
+    <div class="slideshow-container">
+      <div class="slide-container">
+        <img class="slide active" id="s-0" src="images/wb_hikes/proxy_falls_2_small.jpg">
+        <img class="slide" id="s-1" src="images/wb_hikes/proxy_falls_1_small.jpg">
+        <img class="slide" id="s-2" src="images/wb_hikes/castle_rock_small.jpg">
+        <img class="slide" id="s-3" src="images/wb_hikes/hashbrown_loop_1_small.jpg">
+      </div>
+      <div class="slidebutton-container">
+        <div class="slidebutton active" id="sf-0"></div>
+        <div class="slidebutton" id="sf-1"></div>
+        <div class="slidebutton" id="sf-2"></div>
+        <div class="slidebutton" id="sf-3"></div>
+      </div>
+      <div id="nextButton" onmouseover="">&#10095;</div>
+      <div id="prevButton" onmouseover="">&#10094;</div>
+    </div>
+    <p class="slideshow__caption">Photos taken by me (Nathan Taylor).</p>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="scripts/carousel.js"></script>
+{% endblock %}
+
+{% block footer %}
+This is the footer.
+{% endblock %}

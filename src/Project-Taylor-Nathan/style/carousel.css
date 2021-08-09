@@ -1,0 +1,96 @@
+:root {
+  --slide-width: 302.4px;
+  --slide-height: 403.2px;
+  --sf-radius: 10px;
+  --transition-time: 2s;
+}
+
+/* .slideshow__container--caption {
+  width: var(--slide-width);
+}
+
+.slideshow__container--caption p {
+  margin-top: 5px;
+  font-size: x-small;
+} */
+
+.slideshow-container {
+  position: absolute;
+  top: calc(50% - var(--slide-height) / 2);
+  left: calc(50% - var(--slide-width)/ 2);
+  width: var(--slide-width);
+  height: var(--slide-height);
+  overflow: hidden;
+  box-shadow: 0 0 40px rgb(0,0,0,.5);
+}
+
+.slideshow__caption {
+  position: absolute;
+  top: calc(50% - var(--slide-height) / 2 + var(--slide-height));
+  left: calc(50% - var(--slide-width) / 2);
+  margin-top: 5px;
+  font-size: x-small;
+}
+/* .slideshow-container p {
+  position: absolute;
+  top: calc(100%);
+  margin-top: 5px;
+  font-size: x-small;
+} */
+
+.slide {
+  position: absolute;
+  width: var(--slide-width);
+  height: var(--slide-height);
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+  user-select: none;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slidebutton {
+  width: var(--sf-radius);
+  height: var(--sf-radius);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: var(--sf-radius);
+  display: inline-block;
+  transition: background-color var(--transition-time) ease-in-out;
+}
+
+.slidebutton.active {
+  background-color: gray;
+}
+
+.slidebutton-container{
+  position: relative;
+  top: calc(100% - 2 * var(--sf-radius));
+  left: calc(50% - 4 * var(--sf-radius));
+  /* top: calc(50% + var(--radius) - 2 * var(--sf-radius));
+  left: calc(50% + var(--radius) / 2 - var(--sf-radius) * 10); */
+  /* top: calc(100% - var(--slide-height) - 2 * var(--sf-radius));
+  left: calc(100% - var(--slide-width) - 2 * var(--sf-radius)); */
+  user-select: none;
+}
+
+#nextButton {
+  position: absolute;
+  top: calc(50% - 1em);
+  /* left: calc(50% + var(--slide-width) - 1em); */
+  left: calc(100% - 1.3em);
+}
+
+#prevButton {
+  position: absolute;
+  top: calc(50% - 1em);
+  /* left: calc(50% - var(--slide-width) + .5em); */
+  left: .5em;
+}
+
+#nextButton, #prevButton, .slidebutton {
+  cursor: pointer;
+  user-select: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/base.css" type="text/css">
+  <title>Water Bottle Hikes -- {% block title %}CS290 Project{% endblock %}</title>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div class="navbar">
+    <a class="navbar__button navbar__button--spacer"></a>
+    <a class="navbar__button" href="home.html">home</a>
+    <a class="navbar__button" href="hikes.html">hikes</a>
+    <a class="navbar__button" href="map.html">map</a>
+    <a class="navbar__button" href="about.html">about</a>
+    <a class="navbar__button" href="contact.html">contact</a>
+  </div>
+
+  <div class="content">{% block content %}{% endblock %}</div>
+
+  <div class="footer">This page is not associated with 
+  Nalge Nunc International, nor Thermo Fisher Scientific.</div>
+
+  {% block scripts %}{% endblock %}
+  <script src="scripts/base.js"></script>
+ </body>
+</html>
